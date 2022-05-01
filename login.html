@@ -8,11 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
-    <!-- Agregar un alto un alto de nuestros elementos
-        margin:0 quitar las margenes
-    
-    
-    -->
+
     <style>
         body{
             margin:0;
@@ -46,24 +42,18 @@
        body{
             font-family:'Quicksand' ;
        }
-       .title{
-            font-size: var(--lg);
-            margin-bottom: 12px;
-            text-align :center;
-
-
-       }
-       .subtitle{
-            color : var(--very-light_pink);
-            font-size : var(--md);
-            font-weight: 300;
-            margin-top:0 ;
-            margin-bottom: 32px;
-            text-align: center;
-        }
+     
         .form{
             display: flex;
             flex-direction: column;
+        }
+        .form a {
+            color: var(--blue);
+            font-size: var(--sm);
+            text-align: center;
+            text-decoration:none;
+            margin-bottom: 52px;
+
         }
 
         .label{
@@ -79,6 +69,13 @@
             font-size:var(--md) ;
             padding: 6px;
         }
+        .input-email {
+            margin-bottom:22px;
+            
+
+
+
+        }
         .primary-button{
             background-color: 
             var(--blue);
@@ -92,14 +89,25 @@
             
 
         }
+        .secondary-button{
+            background-color: var(--white);
+            border-radius:8px;
+            border: 1px solid var (--blue);
+            color: var(--black);
+            width: 100%;
+            font-size: var(--md);
+            cursor: pointer;
+            font-weight: bold;
+            height:50px
+            
+        }
         .login-button{
 
             margin-top: 14px;
             margin-bottom: 30px;
 
         }
-
-        @media(max-width: 640){
+        @media(max-width: 640px){
             .logo{
 
                 display: block;
@@ -109,11 +117,6 @@
 
         }
 
-       
-
-
-
-
     </style>
 </head>
 <body>
@@ -122,28 +125,27 @@
             <img src="./image/logoOnepiece.jpg" alt="logo"
             class="logo">
 
-            <h1 class="title">Create New Password</h1>
-            <p class="subtitle">Enter New Password</p>
+
 
             <form action="/" class="form">
-                <label for="password"
+                <label for="email"
+                 class="label">Email Address</label>
+                 <input type="text" id="email"
+                 placeholder="OnePiece@example.com" class="input input_email">
+
+                 <label for="password"
                  class="label">Password</label>
                  <input type="password" id="password"
                  placeholder="*********" class="input input_password">
 
-                 <label for="new-password"
-                 class="label">Confirm Password</label>
-                 <input type="password" id="new-password"
-                 placeholder="*********" class="input input_password">
-
                  <input type="submit" 
-                 value="Confirm" 
+                 value="Log in" 
                  class="primary-button 
                  login-button">
-                
-
-
+                 <a href="/">Forgot my Password </a>
             </form>
+            <button class="secondary-button
+            signup-button">Sign up </button>
         </div>
 
     </div>
