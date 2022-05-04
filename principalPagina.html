@@ -24,9 +24,65 @@
                 font-family:'Quicksand' ;
          
         }
-     
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,240px);
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card img{
+
+            width: 123px;
+            height: 188px;
+            border-radius: 20px;
+            object-fit: cover;
+
+        }
+        .product-info{
+
+            display: flex;
+       
+            align-items: center;
+
+        }
+        .product-info input {
+            justify-content: right;
+        }
+
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-bottom: 16px ;
+            margin-top: 4px ;
+
+        }
+        .product-info div p:nth-child(2){
+      
+            font-size: var(--sm);
+            margin-bottom: 0px ;
+            margin-top: 0px ;
+
+        }
+
+        @media (max-width: 640px){
+            .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,140px);
+           
+            }
+            .product-card img{
+
+                width: 123px;
+                height: 188px;
+                border-radius: 20px;
+                object-fit: cover;
+
+            }
 
 
+
+
+        }
 
 
     </style>
@@ -38,116 +94,166 @@
             <div class="product-card">
                 <img src="./image/luffy.png" alt=""
                 class="product">
-                <div>
-                    <p>$300.000.000</p>
-                    <p>Monkey D. Luffy</p>
+                <div class="product-info">
+                    
+                    <div>
+                        <p>$300.000.000</p>
+                        <p>Monkey D. Luffy</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/nami.png" alt=""
                 class="product">
-                <div>
-                    <p>$16.000.000</p>
-                    <p>Nami</p>
+                <div class="product-info" >
+
+                    <div>
+                        <p>$16.000.000</p>
+                        <p>Nami</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/upsop.png" alt=""
                 class="product">
-                <div>
+                <div class="product-info">
+                    <div>
+
                     <p>$30.000.000</p>
                     <p>Usopp</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/zoro.png" alt=""
                 class="product">
-                <div>
+                <div class="product-info">
+                    <div>
                     <p>$120.000.000</p>
                     <p>Zoro</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/Sanji.png" alt=""
                 class="product">
-                <div>
-                    <p>$177.000.000</p>
+                <div class="product-info" >
+                    <div>
+                    <p>$77.000.000</p>
                     <p>Sanji</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/Chopper.png" alt=""
                 class="product">
-                <div>
-                    <p>$100</p>
-                    <p>Tony Tony Chopper</p>
+                <div class="product-info">
+                    <div>
+                        <p>$50</p>
+                        <p>Tony Tony Chopper</p>
+
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/nico.png" alt=""
                 class="product">
-                <div>
+                <div class="product-info" >
+                <div>      
                     <p>$80.000.000</p>
                     <p>Nico Robin</p>
+                </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/luffy.png" alt=""
                 class="product">
-                <div>
-                    <p>$300.000.000</p>
-                    <p>Monkey D. Luffy</p>
+                <div class="product-info">
+                    
+                    <div>
+                        <p>$300.000.000</p>
+                        <p>Monkey D. Luffy</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/nami.png" alt=""
                 class="product">
-                <div>
-                    <p>$16.000.000</p>
-                    <p>Nami</p>
+                <div class="product-info" >
+
+                    <div>
+                        <p>$16.000.000</p>
+                        <p>Nami</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/upsop.png" alt=""
                 class="product">
-                <div>
+                <div class="product-info">
+                    <div>
+
                     <p>$30.000.000</p>
                     <p>Usopp</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/zoro.png" alt=""
                 class="product">
-                <div>
+                <div class="product-info">
+                    <div>
                     <p>$120.000.000</p>
                     <p>Zoro</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/Sanji.png" alt=""
                 class="product">
-                <div>
-                    <p>$177.000.000</p>
+                <div class="product-info" >
+                    <div>
+                    <p>$77.000.000</p>
                     <p>Sanji</p>
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/Chopper.png" alt=""
                 class="product">
-                <div>
-                    <p>$100</p>
-                    <p>Tony Tony Chopper</p>
+                <div class="product-info">
+                    <div>
+                        <p>$50</p>
+                        <p>Tony Tony Chopper</p>
+
+                    </div>
+                    <input type="checkbox">
                 </div>
             </div>
             <div class="product-card">
                 <img src="./image/nico.png" alt=""
                 class="product">
-                <div>
+                <div class="product-info" >
+                <div>      
                     <p>$80.000.000</p>
                     <p>Nico Robin</p>
                 </div>
+                    <input type="checkbox">
+                </div>
             </div>
-
+           
 
         </div
     ></section>
